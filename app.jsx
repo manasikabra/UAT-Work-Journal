@@ -65,11 +65,11 @@ Respond with a valid JSON object matching this schema:
 
 export default function App() {
   const [userName, setUserName] = useState('');
-  const [tempName, setTempName] = useState('Alex Tester');
+  const [tempName, setTempName] = useState('');
   const [isAuthLoading, setIsAuthLoading] = useState(true);
   const [blocks, setBlocks] = useState([{
     id: '1', type: 'qa', status: 'draft',
-    answer: "I am working on testing the new payment gateway integration, specifically the retry logic when a card is declined. Progress: I have set up the sandbox environment and drafted the initial test cases.",
+    answer: "",
     question: "What are you working on? If you are already working on something, what is it and what is the progress?",
     placeholder: "e.g., Payment retry feature.\nCompleted:\n- Set up sandbox\n- Drafted initial test cases",
   }]);
